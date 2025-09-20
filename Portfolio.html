@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text */
+        }
+        .container {
+            max-width: 960px;
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #38bdf8; /* Tailwind's sky-400 */
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header Section -->
+    <header class="py-12 bg-gray-800 shadow-lg text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-bold text-teal-400">Your Name</h1>
+            <p class="mt-2 text-xl font-medium text-gray-400">Frontend Developer | UI/UX Enthusiast</p>
+            <div class="flex justify-center mt-6 space-x-4">
+                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-8">
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-gray-800 p-8 rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-teal-400 mb-6">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+                <img src="https://placehold.co/150x150/2d3748/a0aec0?text=Profile" alt="Profile Picture" class="w-36 h-36 rounded-full border-4 border-gray-700 object-cover shadow-xl">
+                <p class="text-lg text-gray-300 leading-relaxed text-center md:text-left">
+                    I am a passionate and dedicated software developer with a strong focus on building clean, user-friendly, and performant web applications. With a solid foundation in front-end technologies like React, Tailwind CSS, and JavaScript, I enjoy turning complex problems into simple and elegant solutions. I'm always eager to learn new technologies and collaborate on exciting projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-gray-800 p-8 rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-teal-400 mb-6">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center bg-gray-700 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-react text-5xl text-blue-400 mb-2"></i>
+                    <span class="text-lg font-medium">React</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-700 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-js-square text-5xl text-yellow-400 mb-2"></i>
+                    <span class="text-lg font-medium">JavaScript</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-700 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-node-js text-5xl text-green-400 mb-2"></i>
+                    <span class="text-lg font-medium">Node.js</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-700 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-2"></i>
+                    <span class="text-lg font-medium">HTML5</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-700 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-2"></i>
+                    <span class="text-lg font-medium">CSS3</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-700 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-tailwind-css text-5xl text-teal-400 mb-2"></i>
+                    <span class="text-lg font-medium">Tailwind CSS</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-700 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-git-alt text-5xl text-red-500 mb-2"></i>
+                    <span class="text-lg font-medium">Git</span>
+                </div>
+                <div class="flex flex-col items-center bg-gray-700 p-4 rounded-lg shadow-md">
+                    <i class="fas fa-database text-5xl text-gray-400 mb-2"></i>
+                    <span class="text-lg font-medium">SQL/NoSQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-gray-800 p-8 rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-teal-400 mb-6">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-100">Project Alpha</h3>
+                    <p class="mt-2 text-gray-300">
+                        A web application for task management built with React and a REST API. Features user authentication, drag-and-drop reordering, and real-time updates.
+                    </p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="bg-teal-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-600 transition-colors">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                        <a href="#" class="bg-gray-600 text-gray-100 font-semibold py-2 px-4 rounded-lg hover:bg-gray-500 transition-colors">
+                            <i class="fab fa-github mr-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-100">Project Beta</h3>
+                    <p class="mt-2 text-gray-300">
+                        An interactive data visualization dashboard using D3.js to display sales trends and user demographics. The app is fully responsive and loads data asynchronously.
+                    </p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="bg-teal-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-600 transition-colors">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                        <a href="#" class="bg-gray-600 text-gray-100 font-semibold py-2 px-4 rounded-lg hover:bg-gray-500 transition-colors">
+                            <i class="fab fa-github mr-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-100">Project Gamma</h3>
+                    <p class="mt-2 text-gray-300">
+                        A mobile-first e-commerce site built with Vue.js and a Firebase backend. It includes a product catalog, shopping cart, and secure checkout process.
+                    </p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="bg-teal-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-600 transition-colors">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                        <a href="#" class="bg-gray-600 text-gray-100 font-semibold py-2 px-4 rounded-lg hover:bg-gray-500 transition-colors">
+                            <i class="fab fa-github mr-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gemini API Powered Project Description Generator -->
+        <section id="project-generator" class="bg-gray-800 p-8 rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-teal-400 mb-6 flex items-center">
+                <i class="fas fa-magic mr-3"></i> ✨ Project Description Generator ✨
+            </h2>
+            <div class="flex flex-col space-y-4">
+                <div>
+                    <label for="project-title" class="block text-gray-400 font-medium mb-1">Project Title</label>
+                    <input type="text" id="project-title" placeholder="e.g., Online Store" class="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                </div>
+                <div>
+                    <label for="project-keywords" class="block text-gray-400 font-medium mb-1">Keywords (comma-separated)</label>
+                    <input type="text" id="project-keywords" placeholder="e.g., React, Stripe, Firebase, authentication" class="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                </div>
+                <button id="generate-button" class="bg-teal-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-teal-600 transition-colors duration-300 flex items-center justify-center">
+                    Generate Description
+                </button>
+            </div>
+            
+            <div id="loading-indicator" class="mt-6 hidden">
+                <div class="flex items-center justify-center space-x-2">
+                    <div class="spinner"></div>
+                    <span class="text-gray-400">Generating description...</span>
+                </div>
+            </div>
+            
+            <div class="mt-6">
+                <label for="project-description-output" class="block text-gray-400 font-medium mb-1">Generated Description</label>
+                <textarea id="project-description-output" rows="5" class="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none" placeholder="Your generated description will appear here..." readonly></textarea>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-center text-gray-400">
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const generateButton = document.getElementById('generate-button');
+            const projectTitleInput = document.getElementById('project-title');
+            const projectKeywordsInput = document.getElementById('project-keywords');
+            const outputTextarea = document.getElementById('project-description-output');
+            const loadingIndicator = document.getElementById('loading-indicator');
+
+            generateButton.addEventListener('click', async () => {
+                const title = projectTitleInput.value.trim();
+                const keywords = projectKeywordsInput.value.trim();
+
+                if (!title) {
+                    outputTextarea.value = "Please enter a project title.";
+                    return;
+                }
+
+                outputTextarea.value = "";
+                loadingIndicator.classList.remove('hidden');
+                
+                const userQuery = `Write a concise, professional, and engaging project description for a portfolio website.
+                
+                Project Title: ${title}
+                Technologies/Features: ${keywords}`;
+
+                const systemPrompt = `You are an expert copywriter for developer portfolios. Your task is to write a compelling, single-paragraph project description in a professional tone. Do not include a title.`;
+                const apiKey = ""; 
+                const apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=" + apiKey;
+                
+                let retryCount = 0;
+                const maxRetries = 3;
+                const baseDelay = 1000;
+
+                const makeApiCall = async () => {
+                    try {
+                        const payload = {
+                            contents: [{ parts: [{ text: userQuery }] }],
+                            systemInstruction: {
+                                parts: [{ text: systemPrompt }]
+                            }
+                        };
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (!response.ok) {
+                            throw new Error(`API error: ${response.status} ${response.statusText}`);
+                        }
+
+                        const result = await response.json();
+                        const generatedText = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                        if (generatedText) {
+                            outputTextarea.value = generatedText.trim();
+                        } else {
+                            outputTextarea.value = "Failed to generate description. Please try again.";
+                        }
+                    } catch (error) {
+                        if (retryCount < maxRetries) {
+                            retryCount++;
+                            const delay = baseDelay * Math.pow(2, retryCount - 1);
+                            setTimeout(makeApiCall, delay);
+                        } else {
+                            outputTextarea.value = `Error generating description: ${error.message}`;
+                        }
+                    } finally {
+                        loadingIndicator.classList.add('hidden');
+                    }
+                };
+
+                makeApiCall();
+            });
+        });
+    </script>
+
+</body>
+</html>
