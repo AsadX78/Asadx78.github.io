@@ -7,4 +7,4 @@ I’m always learning new technologies and design trends, and I love collaborati
 Outside of coding, I enjoy solving puzzles, exploring UI/UX design, and sharing knowledge with the developer community.
 
 **Let’s connect!**  
-You can reach me at [your-email@example.com](mailto:your-email@example.com) or on [LinkedIn](https://www.linkedin.com/in/your-linkedin).
+You can reach me at [muizlamidi@gmail.com](mailto:muizlamidi@gmail.com) or on [LinkedIn](https://www.linkedin.com/in/your-linkedin).
