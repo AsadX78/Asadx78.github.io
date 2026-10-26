@@ -1,10 +1,9 @@
-Hi, I'm Asad—a passionate Front End Developer with a knack for creating engaging, responsive web experiences.
+# AsadX78 — Security Research Portfolio
 
-I specialize in building modern interfaces using HTML, CSS, JavaScript, and React. My focus is on clean code, smooth user interactions, and mobile-first design. Whether it’s a portfolio site, a dashboard, or a dynamic web app, I enjoy turning ideas into pixel-perfect reality.
+Live site: **https://asadx78.github.io**
 
-I’m always learning new technologies and design trends, and I love collaborating on open source projects. Currently, I’m deepening my skills in Next.js and TypeScript.
+Security researcher focused on web, mobile, API and Web3 security. Bug bounty hunting on Immunefi, HackerOne and Bugcrowd.
 
-Outside of coding, I enjoy solving puzzles, exploring UI/UX design, and sharing knowledge with the developer community.
-
-**Let’s connect!**  
-You can reach me at [muizlamidi@gmail.com](mailto:muizlamidi@gmail.com) or on [LinkedIn](https://www.linkedin.com/in/your-linkedin).
+- **Focus areas:** IDOR / access control, auth bypass, SSRF, XSS, business logic, race conditions, mobile pentesting, smart-contract auditing
+- **Open source:** [defi-hunter](https://github.com/AsadX78/defi-hunter) — DeFi vulnerability discovery toolkit
+- **Contact:** GitHub / Telegram / email (see site footer)

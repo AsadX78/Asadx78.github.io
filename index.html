@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AsadX78 — Security Researcher & Bug Bounty Hunter</title>
+<meta name="description" content="Security researcher focused on web, mobile, API and Web3 security. Bug bounty hunter on Immunefi, HackerOne and Bugcrowd.">
+<style>
+:root{
+  --bg:#0b0f14; --panel:#111820; --panel2:#0e141b; --line:#1e2936;
+  --text:#d7e0ea; --muted:#8b9bab; --accent:#39d98a; --accent2:#4cc2ff;
+  --warn:#ffb454; --crit:#ff5c74;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 48px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 50% -100px,#12331f33,transparent)}
+.kicker{color:var(--accent);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+h1{font-size:2.6rem;margin:.35rem 0 .5rem;letter-spacing:-.02em}
+h1 .dim{color:var(--muted);font-weight:400}
+.tagline{color:var(--muted);font-size:1.05rem;max-width:640px}
+.badges{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+.badge{border:1px solid var(--line);background:var(--panel2);padding:6px 12px;border-radius:999px;font-size:.82rem;color:var(--muted)}
+.badge b{color:var(--text);font-weight:600}
+nav{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap}
+nav a{color:var(--accent2);text-decoration:none;font-size:.92rem}
+nav a:hover{color:var(--accent)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:1.5rem;margin-bottom:18px;letter-spacing:-.01em}
+h2 span{color:var(--accent)}
+p.lead{color:var(--muted);max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font-size:1.02rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.92rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{font-size:.75rem;border:1px solid var(--line);background:var(--panel2);color:var(--muted);padding:3px 10px;border-radius:6px}
+.finding{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--warn);border-radius:10px;padding:18px 20px;margin-bottom:14px}
+.finding.critical{border-left-color:var(--crit)}
+.finding.high{border-left-color:var(--warn)}
+.finding .meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:.78rem;color:var(--muted);margin-bottom:6px}
+.sev{font-weight:700;padding:2px 10px;border-radius:999px;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+.sev.high{background:#3a2b12;color:var(--warn)}
+.sev.critical{background:#3a1520;color:var(--crit)}
+.sev.medium{background:#12303a;color:var(--accent2)}
+.finding h3{font-size:1.02rem}
+.finding p{color:var(--muted);font-size:.92rem;margin-top:6px}
+.finding a{color:var(--accent2);text-decoration:none;font-size:.85rem}
+ul.clean{list-style:none;margin-top:14px}
+ul.clean li{padding:7px 0;border-bottom:1px dashed var(--line);color:var(--muted);font-size:.93rem}
+ul.clean li b{color:var(--text)}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:18px}
+.tool{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:.88rem;color:var(--muted)}
+.tool b{color:var(--text);display:block;font-size:.92rem}
+.contact{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.92rem;background:var(--panel)}
+.btn.primary{background:var(--accent);color:#06240f;border-color:transparent;font-weight:600}
+footer{padding:28px 0;color:var(--muted);font-size:.85rem;text-align:center}
+@media(max-width:640px){h1{font-size:2rem}header{padding:48px 0 36px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">Security Researcher · Bug Bounty</div>
+    <h1>AsadX78 <span class="dim">/ security research</span></h1>
+    <p class="tagline">I break web, mobile, API and Web3 systems the way attackers do — then write it up so engineers can fix it. Hunting on Immunefi, HackerOne and Bugcrowd.</p>
+    <div class="badges">
+      <span class="badge"><b>Focus:</b> Web2 · Mobile · API · Web3</span>
+      <span class="badge"><b>Platforms:</b> Immunefi · HackerOne · Bugcrowd</span>
+      <span class="badge"><b>Open source:</b> defi-hunter</span>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#focus">Focus areas</a>
+      <a href="#findings">Selected findings</a>
+      <a href="#projects">Projects</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="about">
+  <h2>About <span>//</span></h2>
+  <p class="lead">Offensive-minded security researcher. I map attack surfaces end-to-end — recon, threat modeling, exploitation, and validated proof-of-concept reports. I care about real impact: account takeover, fund loss, authentication bypass, and business-logic abuse. On the Web3 side I audit smart contracts and build tooling for automated vulnerability discovery.</p>
+</section>
+
+<section id="focus">
+  <h2>Focus areas <span>//</span></h2>
+  <div class="grid">
+    <div class="card"><h3>Web &amp; API</h3><p>IDOR / broken access control, authentication &amp; session flaws, SSRF, XSS, SQLi, business-logic abuse, race conditions, JWT &amp; OAuth misconfig.</p><div class="chips"><span class="chip">Burp Suite</span><span class="chip">OWASP</span><span class="chip">API top-10</span></div></div>
+    <div class="card"><h3>Mobile</h3><p>Android/iOS app pentesting: SSL-pinning bypass, runtime instrumentation, hardcoded secrets, deep-link &amp; intent abuse, WebView bridges.</p><div class="chips"><span class="chip">Frida</span><span class="chip">objection</span><span class="chip">jadx</span></div></div>
+    <div class="card"><h3>Web3 / Smart Contracts</h3><p>DeFi attack vectors: oracle manipulation, reentrancy, access control, accounting desync, flash-loan attacks, bridge &amp; cross-chain logic.</p><div class="chips"><span class="chip">Foundry</span><span class="chip">Slither</span><span class="chip">Immunefi</span></div></div>
+    <div class="card"><h3>Recon &amp; Automation</h3><p>Attack-surface mapping, JS analysis, dangling-resource detection, CI/CD pipeline security, continuous asset monitoring.</p><div class="chips"><span class="chip">subfinder</span><span class="chip">nuclei</span><span class="chip">katana</span></div></div>
+  </div>
+</section>
+
+<section id="findings">
+  <h2>Selected findings <span>//</span></h2>
+  <div class="finding high">
+    <div class="meta"><span class="sev high">High</span><span>Immunefi — Threshold Network</span><span>2026</span></div>
+    <h3>Subdomain takeover via dangling Google Cloud Storage bucket</h3>
+    <p>Discovered a live DNS record pointing to a deleted GCS bucket (<code>NoSuchBucket</code>), allowing arbitrary content hosting on a trusted <code>*.threshold.network</code> subdomain. Validated with three independent proofs (HTTP response, GCS JSON API, custom-domain Host-header mapping). Responsibly reported with a read-only PoC — no resources were claimed.</p>
+  </div>
+  <p style="color:var(--muted);font-size:.85rem;margin-top:10px">Additional disclosed reports and write-ups are added here after triage/public disclosure.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects <span>//</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>defi-hunter</h3>
+      <p>Open-source DeFi security toolkit — detects and proves smart-contract vulnerabilities across 20 attack classes on 15 EVM chains, with live fork simulation, exploit generation and professional report output.</p>
+      <div class="chips"><span class="chip">Solidity</span><span class="chip">Foundry</span><span class="chip">EVM</span></div>
+      <p style="margin-top:10px"><a href="https://github.com/AsadX78/defi-hunter" style="color:var(--accent2);text-decoration:none">github.com/AsadX78/defi-hunter →</a></p>
+    </div>
+    <div class="card">
+      <h3>Bug bounty workflow &amp; tooling</h3>
+      <p>Private recon pipeline and finding-triage toolkit: subdomain enumeration, JS secret extraction, takeover detection, validated PoC generation, and automated report delivery.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">Go tooling</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="toolkit">
+  <h2>Toolkit <span>//</span></h2>
+  <div class="tools">
+    <div class="tool"><b>Burp Suite</b>Web &amp; mobile proxy, Repeater, Intruder</div>
+    <div class="tool"><b>Nuclei / ffuf / katana</b>Template scanning, fuzzing, crawling</div>
+    <div class="tool"><b>subfinder / httpx / dnsx</b>Attack-surface discovery</div>
+    <div class="tool"><b>Frida / objection</b>Mobile runtime instrumentation</div>
+    <div class="tool"><b>jadx / apktool</b>Android reverse engineering</div>
+    <div class="tool"><b>Foundry / Slither</b>Smart-contract testing &amp; analysis</div>
+    <div class="tool"><b>semgrep / CodeQL</b>Source-code vulnerability hunting</div>
+    <div class="tool"><b>Playwright</b>DOM XSS &amp; client-side flow testing</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact <span>//</span></h2>
+  <p class="lead">Open to security research collaborations, bug bounty programs, and full-time / contract offensive security roles.</p>
+  <div class="contact">
+    <a class="btn primary" href="https://github.com/AsadX78">GitHub — AsadX78</a>
+    <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email</a>
+    <a class="btn" href="https://t.me/YOUR_TELEGRAM">Telegram</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 AsadX78 — responsible disclosure only. No unauthorized testing.</div>
+</footer>
+
+</body>
+</html>
